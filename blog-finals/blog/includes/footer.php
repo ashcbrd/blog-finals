@@ -1,5 +1,5 @@
 <!-- footer -->
 <div class="footer">
-    <p>MyViewers &copy; <?php echo date('Y'); ?></p>
+    <p>BSIT3A CIT236 &copy; <?php echo date('Y'); ?></p>
 </div>
 <!-- // footer -->
