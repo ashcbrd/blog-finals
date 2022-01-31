@@ -8,12 +8,12 @@
 		$posts = getPublishedPostsByTopic($topic_id);
 	}
 ?>
-	<title>LifeBlog | Home </title>
+	<title>Bloggers | Topics </title>
 </head>
 <body>
-<div class="container">
+<div class="container filtered-posts">
 <!-- Navbar -->
-	<?php include( ROOT_PATH . '/includes/navbar.php'); ?>
+	<?php include( ROOT_PATH . '/includes/navbar-opaque.php'); ?>
 <!-- // Navbar -->
 <!-- content -->
 <div class="content">

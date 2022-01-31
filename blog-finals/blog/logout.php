@@ -1,6 +1,7 @@
-<?php 
-	session_start();
-	session_unset($_SESSION['user']);
-	session_destroy();
-	header('location: index.php');
+<?php
+    if (!isset($_SESSION)) { session_start(); }
+    $_SESSION = array(); 
+    session_destroy(); 
+    header("Location: index.php"); 
+    exit();
 ?>

@@ -82,5 +82,7 @@
 		</div>
 		<!-- // Display records from DB -->
 	</div>
+
+	<?php include( ROOT_PATH . '/includes/footer.php') ?>
 </body>
 </html>

@@ -4,25 +4,29 @@
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
 <?php require_once( ROOT_PATH . '/includes/registration_login.php') ?>
 
+
+<script defer src="static/js/fontawesome/all.min.js"></script>
+
 <!-- Retrieve all posts from database  -->
 <?php $posts = getPublishedPosts(); ?>
 
 <body>
 	<!-- container - wraps whole page -->
 	<div class="container">
-		<!-- navbar -->
+		<div class="header">
+			<!-- navbar -->
 		<?php include( ROOT_PATH . '/includes/navbar.php') ?>
 		<!-- // navbar -->
-
+		<div class="welcome_msg">
+			<h1>“There’s a lot of information out there for free, so you’ve got to figure out what makes your information different.”</h1>
+		</div>
 		<!-- banner -->
 		<?php include( ROOT_PATH . '/includes/banner.php') ?>
 		<!-- // banner -->
 
+		</div>
 		<!-- Page content -->
 		<div class="content">
-			<h2 class="content-title">Recent Articles</h2>
-			<hr>
-
 			<?php foreach ($posts as $post): ?>
 				<div class="post" style="margin-left: 0px;">
 					<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
@@ -51,4 +55,8 @@
 
 		<!-- footer -->
 		<?php include( ROOT_PATH . '/includes/footer.php') ?>
+
+		<script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 		<!-- // footer -->

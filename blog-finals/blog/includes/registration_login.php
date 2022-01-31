@@ -12,11 +12,12 @@
 		$password_1 = esc($_POST['password_1']);
 		$password_2 = esc($_POST['password_2']);
 
+
 		// form validation: ensure that the form is correctly filled
-		if (empty($username)) {  array_push($errors, "Uhmm...We gonna need your username"); }
-		if (empty($email)) { array_push($errors, "Oops.. Email is missing"); }
-		if (empty($password_1)) { array_push($errors, "uh-oh you forgot the password"); }
-		if ($password_1 != $password_2) { array_push($errors, "The two passwords do not match");}
+		if (empty($username)) {  array_push($errors, "Username must not be empty"); }
+		if (empty($email)) { array_push($errors, "Email must not be empty"); }
+		if (empty($password_1)) { array_push($errors, "Password must not be empty"); }
+		if ($password_1 != $password_2) { array_push($errors, "The passwords do not match");}
 
 		// Ensure that no user is registered twice. 
 		// the email and usernames should be unique
@@ -48,7 +49,7 @@
 			$_SESSION['user'] = getUserById($reg_user_id);
 
 			// if user is admin, redirect to admin area
-			if ( in_array($_SESSION['user']['role'], ["Admin", "Author"])) {
+			if ( in_array($_SESSION['user']['role'], ["Admin",])) {
 				$_SESSION['message'] = "You are now logged in";
 				// redirect to admin area
 				header('location: ' . BASE_URL . 'admin/dashboard.php');
@@ -82,7 +83,7 @@
 				$_SESSION['user'] = getUserById($reg_user_id); 
 
 				// if user is admin, redirect to admin area
-				if ( in_array($_SESSION['user']['role'], ["Admin", "Author"])) {
+				if ( in_array($_SESSION['user']['role'], ["Admin"])) {
 					$_SESSION['message'] = "You are now logged in";
 					// redirect to admin area
 					header('location: ' . BASE_URL . '/admin/dashboard.php');

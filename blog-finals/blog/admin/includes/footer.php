@@ -22,7 +22,7 @@
       <div class="border1"></div> <!--for the underline -->
         <ul>
           <a href="#"><li>Home</li></a>
-          <a href="#"><li>Team</li></a>
+          <a href="#"><li>Team/li></a>
           <a href="#"><li>Contact</li></a>
           <a href="#"><li>About</li></a>
         </ul>
