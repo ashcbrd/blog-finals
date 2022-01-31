@@ -10,11 +10,11 @@
 <title> <?php echo $post['title'] ?>Bloggers | Post</title>
 <body>
 	<div class="container single-post">
-		<!-- Navbar -->
+		<!-- navbar_ -->
 			<?php include( ROOT_PATH . '/includes/navbar-opaque.php'); ?>
-		<!-- // Navbar -->
+		<!-- // navbar_ -->
 		
-		<div class="content" >
+		<div class="content post-content" >
 			<!-- Page wrapper -->
 			<div class="post-wrapper">
 				<!-- full post div -->

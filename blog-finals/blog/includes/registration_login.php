@@ -52,7 +52,7 @@
 			if ( in_array($_SESSION['user']['role'], ["Admin",])) {
 				$_SESSION['message'] = "You are now logged in";
 				// redirect to admin area
-				header('location: ' . BASE_URL . 'admin/dashboard.php');
+				header('location: ' . BASE_URL . 'admin/posts.php');
 				exit(0);
 			} else {
 				$_SESSION['message'] = "You are now logged in";
@@ -86,7 +86,7 @@
 				if ( in_array($_SESSION['user']['role'], ["Admin"])) {
 					$_SESSION['message'] = "You are now logged in";
 					// redirect to admin area
-					header('location: ' . BASE_URL . '/admin/dashboard.php');
+					header('location: ' . BASE_URL . '/admin/posts.php');
 					exit(0);
 				} else {
 					$_SESSION['message'] = "You are now logged in";

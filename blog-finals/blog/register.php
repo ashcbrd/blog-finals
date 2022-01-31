@@ -6,9 +6,9 @@
 
 <title> Bloggers | Sign up </title>
 <div class="container">
-	<!-- Navbar -->
+	<!-- navbar_ -->
 		<?php include( ROOT_PATH . '/includes/navbar-opaque.php'); ?>
-	<!-- // Navbar -->
+	<!-- // navbar_ -->
 
 	<div class="lgn-container" style="width: 40%; margin: 20px auto;">
 		<form method="post" action="register.php" >

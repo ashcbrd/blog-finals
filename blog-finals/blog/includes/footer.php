@@ -21,10 +21,9 @@
       <h3>Quick Links</h3>
       <div class="border1"></div> <!--for the underline -->
         <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Team</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>About</li></a>
+          <a href="index.php"><li>Home</li></a>
+          <a href="team.php"><li>Team</li></a>
+          <a href="about.php"><li>About</li></a>
         </ul>
     </div>
 

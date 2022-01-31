@@ -14,9 +14,9 @@
 	<!-- container - wraps whole page -->
 	<div class="container">
 		<div class="header">
-			<!-- navbar -->
+			<!-- navbar_ -->
 		<?php include( ROOT_PATH . '/includes/navbar.php') ?>
-		<!-- // navbar -->
+		<!-- // navbar_ -->
 		<div class="welcome_msg">
 			<h1>“There’s a lot of information out there for free, so you’ve got to figure out what makes your information different.”</h1>
 		</div>

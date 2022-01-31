@@ -3,9 +3,9 @@
 <?php  include('includes/head_section.php'); ?>
 	<title>BSIT3A Blog | Sign in </title>
 <div class="container">
-	<!-- Navbar -->
+	<!-- navbar_ -->
 	<?php include( ROOT_PATH . '/includes/navbar-opaque.php'); ?>
-	<!-- // Navbar -->
+	<!-- // navbar_ -->
 
 	<div style="width: 40%; margin: 20px auto;">
 		<form method="post" action="login.php" >
