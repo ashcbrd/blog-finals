@@ -10,3 +10,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.8.0/ckeditor.js"></script>
 <!-- Styling for public area -->
 <link rel="stylesheet" href="../static/css/admin_styles.css">
+<script src="https://kit.fontawesome.com/2999515bc1.js" crossorigin="anonymous"></script>
